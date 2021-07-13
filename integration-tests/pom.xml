@@ -42,6 +42,7 @@
         <module>support</module>
         <module>guice3</module>
         <module>guice4</module>
+        <module>guice5</module>
     </modules>
 
     <reporting>

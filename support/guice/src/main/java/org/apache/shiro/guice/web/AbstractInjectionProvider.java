@@ -31,11 +31,11 @@ import com.google.inject.spi.Dependency;
 import com.google.inject.spi.InjectionPoint;
 import com.google.inject.spi.ProviderWithDependencies;
 
-class AbstractInjectionProvider<T> implements ProviderWithDependencies<T> {
+public class AbstractInjectionProvider<T> implements ProviderWithDependencies<T> {
     private Key<T> key;
 
     @Inject
-    Injector injector;
+    protected Injector injector;
 
     private InjectionPoint constructorInjectionPoint;
     private Set<Dependency<?>> dependencies;
